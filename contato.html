@@ -17,37 +17,35 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sobre.html">Sobre</a>
+                            <a class="nav-link" href="/sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contato.html">Contato</a>
+                            <a class="nav-link" href="/contato">Contato</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-    <div>
-        
-        <h2>Entre em Contato</h2>
-        <p>Preencha o formulário abaixo para entrar em contato conosco:</p>
-        <form id="contact-form">
-            <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" class="form-control" id="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="form-group">
-                <label for="mensagem">Motivo do Contato:</label>
-                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+        <div class="form-user">
+            <h1>Entre em Contato</h1>
+            <p>Preencha o formulário abaixo para entrar em contato conosco:</p>
+            <form action="/contato" method="post">
+                <label for="id_nome">Nome</label>
+                <input class="form-control" name="nome" id="nome" rows="4" required>
+            <div class="form-user">
+                <label for="id_email">E-mail</label>
+                <input class="form-control" name="email" id="email" required>
+            <div>
+            <div class="form-user">
+                <label for="id_motivocontato">Motivo do Contato:</label>
+                <textarea class="form-control" name="motivocontato" id="motivocontato" rows="4" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+            </form>
+        </div>
         
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
